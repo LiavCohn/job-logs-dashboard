@@ -207,7 +207,7 @@ app.post('/api/chat', async (req, res) => {
     const result = await JobLog.aggregate(pipeline);
 
     // 3. Optionally, ask LLM to summarize the result
-    const summaryPrompt = `Given the following MongoDB aggregation result, summarize the answer to the user's question in plain English. User question: "${question}". Result: ${JSON.stringify(result)}`;
+    const summaryPrompt = `Given the following MongoDB aggregation result, summarize the answer to the user's question. User question: "${question}". Result: ${JSON.stringify(result)}`;
     const summaryResponse = await axios.post(
       'https://api.groq.com/openai/v1/chat/completions',
       {
