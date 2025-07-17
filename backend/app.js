@@ -15,7 +15,8 @@ app.use(express.json());
 const PORT = process.env.PORT || 5000;
 const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost:27017/boston_assignment";
 const GROQ_API_KEY =  process.env.GROQ_API_KEY
-// console.log({MONGODB_URI,PORT,GROQ_API_KEY})
+
+
 // MongoDB connection
 mongoose.connect(MONGODB_URI, {
   useNewUrlParser: true,
