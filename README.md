@@ -33,6 +33,9 @@ cd job-logs-dashboard
 ```
 
 ### 2. Set up and Activate Local MongoDB
+**NOTE** 
+- There is a remote database dedicated to this demo. If you wish to skip this step + the import of the data, please make sure you have this on the .env file:
+```MONGODB_URI = mongodb+srv://liavcohen955:9GowzfHMcrR29NcW@cluster0.ppk3ago.mongodb.net```
 
 This project is configured to work with a **local MongoDB instance only** by default.
 
@@ -67,7 +70,7 @@ npm install
 Create a `.env` file in the `backend/` directory:
 
 ```
-MONGODB_URI=mongodb://localhost:27017/boston_assignment
+MONGODB_URI=mongodb://localhost:27017/boston_assignment OR the remote address
 PORT=5000
 GROQ_API_KEY=your_groq_api_key_here
 ```
