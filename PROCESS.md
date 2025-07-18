@@ -10,7 +10,7 @@ This project is a full-stack web application for job log analysis, consisting of
 - **MongoDB**: Used for flexible storage of job log data, supporting complex queries and analytics.
 - **API Endpoints**:
   - Fetch job logs with filtering, pagination, and sorting.
-  - Analytics endpoints for averages, deltas, and outliers.
+  - Analytics endpoints.
   - AI chat endpoint that proxies requests to Groq’s OpenAI-compatible API.
 - **Environment Variables**: Sensitive data (like API keys) is managed via `.env` files and never committed to version control.
 - **Data Import**: A script (`importData.js`) loads job log data from a JSON file into MongoDB.
@@ -44,9 +44,6 @@ This project is a full-stack web application for job log analysis, consisting of
   - Adjusted prompt length and context window to balance response quality and API limits.
   - Added user instructions to clarify what kind of questions the AI can answer (e.g., trends, outliers, summaries).
 
-### Dashboard & Metrics
-- **Delta Explanation**: Iterated on the UI and documentation to clarify what "delta" means in the context of job logs.
-- **Chart Y-Axis Formatting**: Improved prompts and code to format large numbers in a compact, readable way (e.g., 1K, 1M).
 
 ---
 
@@ -54,7 +51,6 @@ This project is a full-stack web application for job log analysis, consisting of
 
 - **Code Generation & Refactoring**: Used AI (Cursor) to scaffold components, generate boilerplate, and refactor code for clarity and efficiency.
 - **Prompt Engineering**: Iteratively refined AI prompts for the chat assistant, testing different phrasings and context strategies.
-- **Debugging & Best Practices**: Asked AI for help with React hooks, pagination logic, error handling, and best practices for data fetching and UI/UX.
 - **Documentation**: Used AI to draft and polish documentation, including this PROCESS.md and the main README.
 - **Naming & Structure**: Consulted AI for suggestions on naming conventions, file structure, and project organization.
 
